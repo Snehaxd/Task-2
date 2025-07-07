@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Frontend Project</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="page">
+    <header>My Advanced Frontend App</header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <section class="content">
+        <h2>Contact Form</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+          <p id="form-status" role="alert"></p>
+        </form>
+
+        <h2>To-Do List</h2>
+        <div class="todo-container">
+          <input type="text" id="taskInput" placeholder="New task">
+          <button id="addBtn">Add Task</button>
+          <ul id="taskList"></ul>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Sidebar Info</h3>
+        <p>This is a sidebar section. It adjusts based on screen size.</p>
+      </aside>
+    </main>
+
+    <footer>&copy; 2025 My Advanced App</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
